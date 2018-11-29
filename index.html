@@ -12,7 +12,10 @@
       <a class="header-logo">
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина DEVICE">
       </a>
-      <!-- Здесь будет форма поиска по сайту -->
+      <form class="header-search" action="search.html" method="GET">
+        <label class="visually-hidden" for="header-search-input">Поиск по сайту</label>
+        <input class="header-search-input" type="text" id="header-search-input" name="search" placeholder="Поиск по сайту">
+      </form>
       <ul class="user-nav-header">
         <li><a class="nav-login nav-login-header" href="login.html">Войти</a></li>
         <li><a class="nav-compare nav-compare-header" href="compare.html">Сравнить</a></li>
@@ -96,6 +99,33 @@
       <img src="img/logo-html.svg" width="27" height="35" alt="Курс «Профессиональный HTML и CSS, уровень 1»">
     </a>
   </footer>
+
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="feedback-form" action="feedback.html" method="POST">
+      <p>
+        <label for="feedback-name">Ваше имя:</label>
+        <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="password" id="feedback-email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="feedback-text">Текст письма:</label>
+        <textarea id="feedback-text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img class="map" src="img/map-jpg.jpg" width="560" height="222" alt="Адрес офиса: улица Строителей, 15">
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
 </body>
 
 </html>

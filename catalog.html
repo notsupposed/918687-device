@@ -12,7 +12,10 @@
       <a class="header-logo" href="index.html">
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина DEVICE">
       </a>
-      <!-- Здесь будет форма поиска по сайту -->
+      <form class="header-search" action="search.html" method="GET">
+        <label class="visually-hidden" for="header-search-input">Поиск по сайту</label>
+        <input class="header-search-input" type="text" id="header-search-input" name="search" placeholder="Поиск по сайту">
+      </form>
       <ul class="user-nav-header">
         <li><a class="nav-profile nav-profile-header" href="profile.html">Валентин Петухов</a></li>
         <li><a class="nav-logout nav-logout-header" href="logout.html">Войти</a></li>
@@ -51,21 +54,63 @@
     </nav>
 
     <section class="filters">
-      <!-- Здесь будет форма с фильтрами -->
-      <!-- 
-        <h2>Фильтр:</h2>
-        <h3>Стоимость</h3>
-        <h3>Цвет</h3>
-        <label>Черный</label>
-        <label>Белый</label>
-        <label>Синий</label>
-        <label>Красный</label>
-        <label>Розовый</label>
-        <h3>Bluetooth</h3>
-        <label>Есть</label>
-        <label>Нет</label>
-        <input type="submit">Показать</input>
-      -->
+      <!--h2>Фильтр:</h2>
+      <h3>Стоимость</h3-->
+      <form class="filter" method="GET" action="catalog.html">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="black" checked>
+                Черный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="white">
+                Белый
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="blue" checked>
+                Синий
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="red" checked>
+                Красный
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="bluetooth" value="true" checked>
+                Есть
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="bluetooth" value="false">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
