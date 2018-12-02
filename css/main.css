@@ -44,6 +44,24 @@ a {
   text-decoration: none;
 }
 
+.button {
+  color: #000000;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18.5px;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+  border: 0;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* HEADER */
 
 .main-nav {
