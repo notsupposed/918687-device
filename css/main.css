@@ -141,6 +141,43 @@ a {
   background-color: #cccccc;
 }
 
+/* PRODUCTS MAIN */
+
+main h1 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 47.5px;
+  font-weight: bold;
+  line-height: 47.5px;
+  letter-spacing: 0.5px;
+}
+
+.crumbs li {
+  list-style: none;
+}
+
+.crumbs {
+  font-family: 'OpenSans-Light', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.crumbs a {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.crumbs a:hover,
+.crumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.crumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 /* PRODUCTS FILTERS */
 
 .filters {
