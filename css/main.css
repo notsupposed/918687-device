@@ -167,6 +167,37 @@ a {
   letter-spacing: 0.1px;
 }
 
+/* PRODUCTS CATALOG */
+
+.catalog-item h3 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.catalog-item {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item .price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #464646;
+}
+
+.catalog-item img {
+  background-color: #cccccc;
+}
+
 /* FOOTER */
 
 .main-footer {
