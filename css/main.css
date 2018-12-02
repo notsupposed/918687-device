@@ -93,3 +93,65 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
+
+/* FOOTER */
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer li {
+  list-style: none;
+}
+
+.footer-nav a,
+.footer-social a {
+  color: #ffffff;
+}
+
+.footer-contacts {
+  letter-spacing: normal;
+}
+
+.services-nav-footer {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.services-nav-footer a:hover,
+.services-nav-footer a:focus,
+.footer-logo:hover,
+.footer-logo:focus,
+.credentials-logo:hover,
+.credentials-logo:focus {
+  opacity: 0.6;
+}
+
+.services-nav-footer a:active,
+.footer-logo:active,
+.credentials-logo:active {
+  opacity: 0.3;
+}
+
+.user-nav-footer a,
+.footer-social a {
+  opacity: 0.7;
+}
+
+.user-nav-footer a:hover,
+.user-nav-footer a:focus,
+.footer-social a:hover,
+.footer-social a:focus {
+  opacity: 1;
+}
+
+.user-nav-footer a:active,
+.footer-social a:active {
+  opacity: 0.3;
+}
