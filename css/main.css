@@ -112,6 +112,35 @@ a {
   text-transform: uppercase;
 }
 
+/* INDEX MAIN */
+
+.about h2,
+.contacts h2 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 47.5px;
+  font-weight: bold;
+  line-height: 47.5px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.about p,
+.contacts p {
+  color: #464646;
+}
+
+.about li {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #000000;
+}
+
+.map {
+  background-color: #cccccc;
+}
+
 /* FOOTER */
 
 .main-footer {
