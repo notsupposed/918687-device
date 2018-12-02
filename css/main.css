@@ -141,6 +141,32 @@ a {
   background-color: #cccccc;
 }
 
+/* PRODUCTS FILTERS */
+
+.filters {
+  color: #000000;
+
+  background-color: #EFEEEF;
+}
+
+.filters legend {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.filters li {
+  list-style: none;
+}
+
+.filters label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
 /* FOOTER */
 
 .main-footer {
