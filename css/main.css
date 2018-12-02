@@ -329,12 +329,3 @@ main h1 {
   background-color: #ffffff;
   border-color: #f0c52e;
 }
-
-.modal-feedback input:invalid,
-.modal-feedback textarea:invalid {  
-  background-color: #F1DBDA;
-
-  border-color: transparent;
-  outline:none;
-  box-shadow:none;
-}
