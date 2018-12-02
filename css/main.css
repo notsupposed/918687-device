@@ -202,3 +202,45 @@ a {
 .footer-social a:active {
   opacity: 0.3;
 }
+
+/* MODAL FEEDBACK */
+
+.modal-feedback label {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 24.5px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {  
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464546;
+
+  background-color: #F2F1F2;
+  border: 3px solid transparent;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {  
+  background-color: #EAE9EA;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {  
+  background-color: #ffffff;
+  border-color: #f0c52e;
+}
+
+.modal-feedback input:invalid,
+.modal-feedback textarea:invalid {  
+  background-color: #F1DBDA;
+
+  border-color: transparent;
+  outline:none;
+  box-shadow:none;
+}
