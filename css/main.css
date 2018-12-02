@@ -44,3 +44,52 @@ a {
   text-decoration: none;
 }
 
+/* HEADER */
+
+.main-nav {
+  color: #000000;
+
+  background-color: #f7e296;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav a {
+  color: #000000;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  opacity: 0.6;
+}
+
+.main-nav a:active {
+  opacity: 0.3;
+}
+
+
+.header-search-input {
+  color: #000000;
+  opacity: 0.3;
+  
+  background-color: #f7e296;
+}
+
+.header-search-input:hover {
+  opacity: 0.6;
+}
+
+.header-search-input:focus {
+  opacity: 1;
+}
+
+.site-nav-title {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px; 
+  font-weight: bold;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
