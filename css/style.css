@@ -27,6 +27,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 1600px; /* TEMPORARY FOR TESTING PURPOSES; DELETE BEFORE SUBMITTING */
   margin: 0;
 
   font-family: 'OpenSans-Light', Arial, sans-serif;
@@ -62,7 +67,35 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* HEADER */
+
+.main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+main .title, main nav.crumbs {
+  margin-left: 200px;
+}
 
 .main-nav {
   color: #000000;
@@ -113,6 +146,21 @@ a {
 }
 
 /* INDEX MAIN */
+
+.index-columns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1160px;
+  padding: 0 10px;
+}
+
+.about {
+  width: 462px; /* ROUND? */
+}
+
+.contacts {
+  width: 560px;
+}
 
 .about h2,
 .contacts h2 {
@@ -180,7 +228,29 @@ main h1 {
 
 /* PRODUCTS FILTERS */
 
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  padding: 0 10px;
+}
+
+.filters-caption {
+  order: 1;
+  
+  width: 468px;
+  margin: 0;
+
+  background-color: #DBDADB;
+}
+
+
+
 .filters {
+  order: 3;
+
+  width: 468px;
+
   color: #000000;
 
   background-color: #EFEEEF;
@@ -204,7 +274,27 @@ main h1 {
   letter-spacing: 0.1px;
 }
 
+.sorting-wrapper {
+  order: 2;
+
+  width: 972px;
+
+  background-color: #EFEEEF;
+}
+
 /* PRODUCTS CATALOG */
+
+.catalog {
+  order: 4;
+
+  width: 972px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .catalog-item h3 {
   font-family: 'Gilroy', Arial, sans-serif;
@@ -215,6 +305,8 @@ main h1 {
 }
 
 .catalog-item {
+  width: 360px;
+  
   list-style: none;
 }
 
@@ -238,6 +330,8 @@ main h1 {
 /* FOOTER */
 
 .main-footer {
+  width: 100%;
+
   color: #ffffff;
 
   background-color: #464646;
@@ -245,6 +339,12 @@ main h1 {
 
 .main-footer li {
   list-style: none;
+}
+
+.main-footer .container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .footer-nav a,
