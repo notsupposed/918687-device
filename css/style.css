@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-width: 1600px; /* TEMPORARY FOR TESTING PURPOSES; DELETE BEFORE SUBMITTING */
+  _min-width: 1600px; /* TEMPORARY FOR TESTING PURPOSES; DELETE BEFORE SUBMITTING */
   margin: 0;
 
   font-family: 'OpenSans-Light', Arial, sans-serif;
@@ -154,16 +154,20 @@ main .title, main nav.crumbs {
   padding: 0 10px;
 }
 
-.about {
+.index-columns section {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-columns .about {
   width: 462px; /* ROUND? */
 }
 
-.contacts {
+.index-columns .contacts {
   width: 560px;
 }
 
-.about h2,
-.contacts h2 {
+.index-columns h2 {
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 47.5px;
   font-weight: bold;
@@ -172,8 +176,7 @@ main .title, main nav.crumbs {
   color: #000000;
 }
 
-.about p,
-.contacts p {
+.index-columns p {
   color: #464646;
 }
 
@@ -183,6 +186,12 @@ main .title, main nav.crumbs {
   font-weight: bold;
   line-height: 40px;
   color: #000000;
+}
+
+.index-columns .button {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #464646;
 }
 
 .map {
@@ -306,7 +315,7 @@ main h1 {
 
 .catalog-item {
   width: 360px;
-  
+
   list-style: none;
 }
 
