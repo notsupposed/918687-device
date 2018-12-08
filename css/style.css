@@ -703,3 +703,29 @@ main h1 {
   height: 160px;
   background-color: #f7e296;
 }
+
+.dummy-services {
+  height: 288px;
+  margin-top: 100px;
+  background-color: #e5e5e5;
+}
+
+.dummy-brands {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 108px 10px 93px 10px;
+  list-style: none;
+}
+
+.dummy-brands li {
+  display: block;
+  width: 260px;
+  height: 100px;
+  background-color: #e5e5e5;
+}
+
+.index-columns {
+  min-height: 540px; /* TEMPORARY FOR PIXEL-PERFECT CHECK */
+  padding-bottom: 101px;
+}
