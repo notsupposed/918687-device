@@ -681,3 +681,25 @@ main h1 {
   background-color: #ffffff;
   border-color: #f0c52e;
 }
+
+/* DUMMY BLOCKS */
+
+.dummy-promo {
+  height: 487px;
+  margin-bottom: 106px;
+  background: url('../img/slider-1.png') no-repeat 100px 2px;
+}
+.dummy-categories {
+  display: flex;
+  justify-content: space-between;
+  height: 322px;
+  margin: 0px;
+  padding: 0px 10px;
+  list-style: none;
+}
+.dummy-categories li {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
