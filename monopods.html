@@ -12,34 +12,49 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="header-logo" href="index.html">
-        <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина DEVICE">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина DEVICE">
       </a>
-      <form class="header-search" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="header-search-input" type="text" id="header-search-input" name="search" placeholder="Поиск по сайту">
-      </form>
-      <ul class="user-nav-header">
-        <li><a class="nav-profile nav-profile-header" href="profile.html">Валентин Петухов</a></li>
-        <li><a class="nav-logout nav-logout-header" href="logout.html">Войти</a></li>
-        <li><a class="nav-compare nav-compare-header" href="compare.html">Сравнить</a></li>
-        <li><a class="nav-cart nav-cart-header" href="cart.html">Корзина</a></li>
-      </ul>
+      <div class="row">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="header-search-input" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="header-search-button" type="submit">Найти</button>
+        </form>
+        <ul class="user-nav-header">
+          <li><a class="with-icon-user-dark" href="profile.html">Валентин Петухов</a></li>
+          <li><a class="dimmed" href="logout.html">Выйти</a></li>
+        </ul>
+        <ul class="shop-nav-header">
+          <li><a class="with-icon-compare-dark" href="compare.html">Сравнить</a></li>
+          <li><a class="with-icon-cart-dark" href="cart.html">Корзина</a></li>
+        </ul>
+      </div>
       <ul class="site-nav">
-        <li>
-          <div class="dropdown">
-            <p class="site-nav-title dropdown-title"><a href="#">Каталог товаров</a></p>
-            <ul class="dropdown-inner">
-              <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
-              <li class="current"><a href="monopods.html">Моноподы для селфи</a></li>
-              <li><a href="action-cameras.html">Экшн-камеры</a></li>
-              <li><a href="fitness.html">Фитнес-браслеты</a></li>
-              <li><a href="smart-watches.html">Умные часы</a></li>
-              <li><a href="quadcopters.html">Квадрокоптеры</a></li>
-            </ul>
-          </div>
+        <li class="nav-dropdown">
+          <a class="site-nav-title" href="#">Каталог товаров</a>
+          <ul class="nav-dropdown-inner" style="_display: none;">
+            <li>
+              <ul>
+                <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
+                <li class="current"><a href="monopods.html">Моноподы для селфи</a></li>
+                <li><a href="action-cameras.html">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="fitness.html">Фитнес-браслеты</a></li>
+                <li><a href="smart-watches.html">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li><a class="site-nav-title" href="delivery.html">Доставка</a></li>
         <li><a class="site-nav-title" href="warranty.html">Гарантия</a></li>
-        <li><a class="site-nav-title" href="contacts.html">Контакты</a></li>
+        <li class="push-right"><a class="site-nav-title" href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
