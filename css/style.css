@@ -353,8 +353,6 @@ input[type="radio"].visually-hidden {
 .site-nav > li {
   margin-right: 34px;
 }
-
-.site-nav > li:first-child,
 .site-nav > li:last-child {
   margin-right: 0px;
 }
@@ -364,8 +362,10 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 
-.nav-dropdown {
-  width: 540px;
+.site-nav li.nav-dropdown {
+  width: 260px;
+  margin-right: 280px;
+  cursor: pointer;
 }
 .nav-dropdown > a{
   padding-right: 28px;
