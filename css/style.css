@@ -371,6 +371,46 @@ input[type="radio"].visually-hidden {
 
 /* INDEX MAIN */
 
+.popular-categories {
+  display: flex;
+  justify-content: space-between;
+  height: 322px;
+  margin: 0px;
+  padding: 0px 10px;
+  list-style: none;
+}
+
+.popular-categories li {
+  display: block;
+  width: 160px;
+  height: 160px;
+
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px; 
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.popular-categories img {
+  background-color: #f7e296;
+  margin-bottom: 28px;
+}
+
+.popular-categories a:hover img,
+.popular-categories a:focus img {
+  background-color: #f0c52e;
+}
+
+.popular-categories a:active img {
+  background-color: #f0c52e;
+  opacity: 0.3;
+}
+
+.popular-categories a {
+  display: block;
+}
+
 .index-columns {
   display: flex;
   justify-content: space-between;
@@ -688,20 +728,6 @@ main h1 {
   height: 487px;
   margin-bottom: 106px;
   background: url('../img/slider-1.png') no-repeat 100px 2px;
-}
-.dummy-categories {
-  display: flex;
-  justify-content: space-between;
-  height: 322px;
-  margin: 0px;
-  padding: 0px 10px;
-  list-style: none;
-}
-.dummy-categories li {
-  display: block;
-  width: 160px;
-  height: 160px;
-  background-color: #f7e296;
 }
 
 .dummy-services {
