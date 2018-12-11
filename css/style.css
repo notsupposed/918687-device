@@ -799,20 +799,16 @@ main h1 {
   opacity: 0.3;
 }
 
-.user-nav-footer a,
-.footer-social a {
+.user-nav-footer a {
   opacity: 0.7;
 }
 
 .user-nav-footer a:hover,
-.user-nav-footer a:focus,
-.footer-social a:hover,
-.footer-social a:focus {
+.user-nav-footer a:focus {
   opacity: 1;
 }
 
-.user-nav-footer a:active,
-.footer-social a:active {
+.user-nav-footer a:active {
   opacity: 0.3;
 }
 
@@ -826,6 +822,10 @@ main h1 {
 }
 .main-footer .row-footer-services {
   padding-top: 6px;
+}
+
+.row-footer-social {
+  margin-top: 45px;
 }
 
 .row-footer-social::before {
@@ -842,6 +842,23 @@ main h1 {
   width: 142px;
   margin: 0px;
   padding: 0px;
+}
+
+.footer-social a {
+  opacity: 0.3;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  opacity: 0.6;
+}
+
+.footer-social a:active {
+  opacity: 0.1;
+}
+
+.credentials-logo img {
+  margin-left: 53px;
 }
 
 /* MODAL FEEDBACK */
