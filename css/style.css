@@ -468,10 +468,14 @@ main.page-catalog {
 }
 
 main h1 {
+  margin: 0;
+  margin-top: 38px;
+  margin-left: 60px;
+
   font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 47.5px;
+  font-size: 47px;
   font-weight: bold;
-  line-height: 47.5px;
+  line-height: 48px;
   letter-spacing: 0.5px;
 }
 
