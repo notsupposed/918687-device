@@ -585,11 +585,11 @@ main h1 {
 }
 
 .crumbs li::after {
-  content: "";
 
   position: absolute;
   top: 9px;
   right: -20px;
+  content: "";
 
   width: 4px;
   height: 7px;
@@ -776,17 +776,18 @@ main h1 {
 }
 
 .catalog-item {
-  margin-top: 45px;
-  width: 360px;
   
   display: flex;
+  
+  margin-top: 45px;
+  width: 360px;
   flex-direction: column;
   list-style: none;
 }
 
 .catalog-item .wrapper {
-  order: 2;
   display: flex;
+  order: 2;
 
   margin-top: 32px;
 
@@ -822,6 +823,34 @@ main h1 {
 
 .catalog-item img {
   background-color: #cccccc;
+}
+
+.catalog-item-new {
+  position: relative;
+}
+
+.catalog-item-new::before {
+  content: "NEW";
+
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  width: 57px;
+  height: 57px;
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 57px;
+
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  color: rgba(0, 0, 0, 0.1);
+
 }
 
 .pagination-list {
