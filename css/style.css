@@ -757,7 +757,8 @@ main h1 {
 
 .catalog {
   flex-grow: 0;
-  width: 832px;
+  width: 760px;
+  padding: 24px 0 77px 72px; /* DO WE WANT TO HAVE 10px PADDING-LEFT? */
 }
 
 .catalog-stretcher {
@@ -767,10 +768,8 @@ main h1 {
 .catalog-list {
   display: flex;
 
-  padding: 0;
-  margin: 0;
-  margin-top: 24px;
-  margin-left: 72px;
+  padding: 0; /* CHECK IF IT MIGHT BE SAFELY OMITTED */
+  margin: 0; /* CHECK IF IT MIGHT BE SAFELY OMITTED */
 
   justify-content: space-between;
   flex-wrap: wrap;
@@ -823,6 +822,42 @@ main h1 {
 
 .catalog-item img {
   background-color: #cccccc;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+
+  min-height: 70px;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+
+  list-style: none;
+  background-color: #EBEAEB;
+}
+
+.pagination-list a {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.pagination-list li:first-child {
+  margin-right: auto;
+}
+
+.pagination-list li:last-child {
+  margin-left: auto;
+}
+
+.pagination-list li:first-child,
+.pagination-list li:last-child,
+.pagination-list > .pagination-inactive {
+  padding: 0 30px;
 }
 
 /* FOOTER */
