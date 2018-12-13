@@ -649,7 +649,7 @@ main h1 {
   
   align-items: center;
 
-  background-color: #DBDADB;
+  background-color: #DBD9DB;
 }
 
 .filters-caption-stretcher {
@@ -664,7 +664,7 @@ main h1 {
 
   align-items: center;
   
-  background-color: #EFEEEF;
+  background-color: #EBEAEB;
 }
 
 .sorting-options {
@@ -711,7 +711,7 @@ main h1 {
 .sorting-stretcher {
   flex-grow: 1;
   
-  background-color: #EFEEEF;
+  background-color: #EBEAEB;
 }
 
 .sorting-caption {
