@@ -624,10 +624,14 @@ main h1 {
   width: 100%;
 }
 
+.stretch-captions {
+  min-height: 70px;
+  align-items: stretch;
+}
+
 .filters-caption,
 .sorting-caption {
   margin: 0;
-  padding-top: 23px; /* SEE ISSUE #29 */ 
 
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 16px;
@@ -637,11 +641,14 @@ main h1 {
   text-transform: uppercase;
 }
 
-.filters-caption {  
+.filters-caption { 
+  display: flex; 
   flex-grow: 0;
   width: 269px;
   padding-left: 60px;
   
+  align-items: center;
+
   background-color: #DBDADB;
 }
 
@@ -652,9 +659,53 @@ main h1 {
 }
 
 .sorting {
+  display: flex;
   width: 832px;
+
+  align-items: center;
   
   background-color: #EFEEEF;
+}
+
+.sorting-options {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-options li {
+  margin-right: 30px;
+  margin-bottom: 5px; /* TEMPORARY COMPENSATION OF VERTICAL ALIGNMENT; */
+}
+
+.sorting-options a {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+
+  color: #000000;
+}
+
+.sorting a {
+  opacity: 0.3;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  opacity: 0.6;
+}
+
+.sorting a:active {
+  opacity: 1;
+}
+
+.sorting .sort-current > a,
+.sorting .sorting-direction-current > a {
+  opacity: 1;
+
+  cursor: default;
 }
 
 .sorting-stretcher {
@@ -664,7 +715,9 @@ main h1 {
 }
 
 .sorting-caption {
-  padding-left: 72px;
+  margin-left: 72px;
+  margin-right: 50px;
+  
 }
 
 .filters {
