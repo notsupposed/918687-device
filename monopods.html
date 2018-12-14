@@ -90,40 +90,40 @@
 
     <div class="stretch">
       <div class="filters-stretcher"></div>
-      <section class="filters">
+      <section class="filters-container">
         <!--h3>Стоимость</h3-->
-        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="filters" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
             <legend>Цвет</legend>
             <ul>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="black" checked>
-                  Черный
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="blue" checked>
+                  <span class="filter-label">Черный</span>
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="white">
-                  Белый
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="white">
+                  <span class="filter-label">Белый</span>
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="blue" checked>
-                  Синий
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="blue" checked>
+                  <span class="filter-label">Синий</span>
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="red" checked>
-                  Красный
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="red" checked>
+                  <span class="filter-label">Красный</span>
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="pink">
-                  Розовый
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="pink" disabled>
+                  <span class="filter-label">Розовый</span>
                 </label>
               </li>
             </ul>
@@ -131,16 +131,16 @@
           <fieldset>
             <legend>Bluetooth</legend>
             <ul>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="radio" name="bluetooth" value="true" checked>
-                  Есть
+                  <input class="visually-hidden filter-radio" type="radio" name="bluetooth" value="true" checked>
+                  <span class="filter-label">Есть</span>
                 </label>
               </li>
-              <li>
+              <li class="filter-option">
                 <label>
-                  <input type="radio" name="bluetooth" value="false">
-                  Нет
+                  <input class="visually-hidden filter-radio" type="radio" name="bluetooth" value="false">
+                  <span class="filter-label">Нет</span>
                 </label>
               </li>
             </ul>
