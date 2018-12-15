@@ -519,17 +519,20 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns h2 {
-  margin-top: 60px;
+  margin-top: 51px;
+  margin-bottom: 29px;
 
   font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 47.5px;
+  font-size: 47px;
+  line-height: 48px;
   font-weight: bold;
+  letter-spacing: 0.5px;
   color: #000000;
 }
 
 .index-columns p {
   color: #464646;
-  letter-spacing: 0px;
+  letter-spacing: normal;
 }
 
 .about ul {
@@ -1231,6 +1234,6 @@ main h1 {
 }
 
 .index-columns {
-  min-height: 540px; /* TEMPORARY FOR PIXEL-PERFECT CHECK */
+  min-height: 542px; /* TEMPORARY FOR PIXEL-PERFECT CHECK */
   padding-bottom: 83px;
 }
