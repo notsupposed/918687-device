@@ -1256,7 +1256,16 @@ main h1 {
   margin-left: 53px;
 }
 
-/* MODAL FEEDBACK */
+/* MODALS */
+
+.modal {
+  position: fixed;
+  z-index: 2; /* TEST ON MONOPODS PAGE */
+
+  width: 960px;
+
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
 
 .modal-feedback label {
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
@@ -1287,6 +1296,73 @@ main h1 {
 .modal-feedback textarea:focus {  
   background-color: #ffffff;
   border-color: #f0c52e;
+}
+
+.modal-map {
+  _display: none;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-map img{
+  display: block;
+
+  background-color: #E9E8E9;
+}
+
+.modal-close {
+
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: #f0c52e;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 26px;
+  left: 11px;
+
+  width: 32px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 /* DUMMY BLOCKS */
