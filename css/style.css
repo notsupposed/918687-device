@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-ExtraBold';
   src: url('../fonts/gilroy-extrabold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
@@ -57,7 +57,7 @@ a {
   height: 31px;
   padding-top: 9px; /* REFACTOR UTILISING VERTICAL ALIGNMENT */
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -376,7 +376,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav-title {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px; 
   font-weight: bold;
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
   width: 160px;
   height: 160px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px; 
   font-weight: bold;
@@ -522,7 +522,7 @@ input[type="radio"].visually-hidden {
   margin-top: 51px;
   margin-bottom: 29px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: bold;
@@ -543,7 +543,7 @@ input[type="radio"].visually-hidden {
 
 .about li {
   position: relative;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   font-weight: bold;
@@ -586,7 +586,7 @@ main h1 {
   margin-top: 38px;
   margin-left: 60px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 47px;
   font-weight: bold;
   line-height: 48px;
@@ -675,7 +675,7 @@ main h1 {
 .sorting-caption {
   margin: 0;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -803,7 +803,7 @@ main h1 {
   position: absolute;
   top: 10px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -935,7 +935,7 @@ main h1 {
 .catalog-item h3 {
   margin: 0;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -982,7 +982,7 @@ main h1 {
   text-align: center;
   line-height: 57px;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.7px;
@@ -1004,7 +1004,7 @@ main h1 {
 }
 
 .pagination-list a {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
@@ -1057,7 +1057,7 @@ main h1 {
   width: 430px;
   padding: 0px;
   margin: 0px;
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
@@ -1165,7 +1165,7 @@ main h1 {
 /* MODAL FEEDBACK */
 
 .modal-feedback label {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 17.5px;
   font-weight: bold;
   line-height: 24.5px;
