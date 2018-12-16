@@ -882,7 +882,7 @@ main h1 {
   cursor: default;
 }
 
-.filter-option label:hover .filter-label::before { /* CHECK IF SUCH SELECTOR ALLOWED */
+.filter-option:hover .filter-label::before {
   opacity: 0.6;
 }
 
