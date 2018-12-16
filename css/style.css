@@ -390,6 +390,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .site-nav > li {
@@ -400,7 +401,7 @@ input[type="radio"].visually-hidden {
 }
 
 .push-right {
-  margin-left: auto;
+  flex-grow: 1;
   text-align: right;
 }
 
