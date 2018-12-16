@@ -743,8 +743,8 @@ main h1 {
   opacity: 1;
 }
 
-.sorting .sort-current > a,
-.sorting .sorting-direction-current > a {
+.sorting .sort-current,
+.sorting .sorting-direction-current {
   opacity: 1;
 
   cursor: default;
