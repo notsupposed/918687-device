@@ -504,6 +504,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.popular-category-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .index-columns {
   display: flex;
   justify-content: space-between;
