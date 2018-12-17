@@ -184,24 +184,26 @@
     </div>
   </footer>
 
-  <div class="modal modal-feedback">
+  <section class="modal modal-feedback">
     <button class="modal-close" type="button">Закрыть</button>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" required>
-      </p>
-      <p>
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input type="text" id="feedback-email" name="email" placeholder="email@example.com" required>
-      </p>
+      <div class="row">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="text" id="feedback-email" name="email" placeholder="email@example.com" required>
+        </p>
+      </div>
       <p>
         <label for="feedback-text">Текст письма:</label>
         <textarea id="feedback-text" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-  </div>
+  </section>
 
   <section class="modal modal-map">
     <button class="modal-close" type="button">Закрыть</button>
