@@ -327,6 +327,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #f7e296;
   border: 2px solid #000000;
+
+  cursor: pointer;
 }
 
 .header-search-button:hover,
@@ -1177,15 +1179,15 @@ main h1 {
 
 .services-nav-footer a:hover,
 .services-nav-footer a:focus,
-.footer-logo:hover,
-.footer-logo:focus,
+.footer-logo[href]:hover,
+.footer-logo[href]:focus,
 .credentials-logo:hover,
 .credentials-logo:focus {
   opacity: 0.6;
 }
 
 .services-nav-footer a:active,
-.footer-logo:active,
+.footer-logo[href]:active,
 .credentials-logo:active {
   opacity: 0.3;
 }
