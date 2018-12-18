@@ -866,6 +866,10 @@ main h1 {
   user-select: none;
 }
 
+.filter-checkbox:focus + .filter-label::before,
+.filter-radio:focus + .filter-label::before {
+  opacity: 0.6;
+}
 
 .filter-checkbox + .filter-label::before {
   position: absolute;
@@ -1312,6 +1316,7 @@ main h1 {
 
   background-color: #F2F1F2;
   border: 3px solid transparent;
+  outline: none;
 }
 
 .modal-feedback input:hover,
