@@ -227,11 +227,11 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
-.logo[href]:hover,
-.logo[href]:focus {
+.header-logo[href]:hover,
+.header-logo[href]:focus {
   opacity: 0.6;
 }
-.logo[href]:active {
+.header-logo[href]:active {
   opacity: 0.3;
 }
 
