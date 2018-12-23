@@ -60,15 +60,16 @@ a {
 .button {
   position: relative;
   z-index: 1;
-
+  display:inline-block;
+  
   width: 260px;
-  height: 31px;
-  padding-top: 9px; /* REFACTOR UTILISING VERTICAL ALIGNMENT */
-
+  height: 40px;
+  
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 40px;
+  vertical-align: middle;
   text-align: center;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -91,6 +92,10 @@ a {
   height: 8px;
   
   background-color: #f0c52e;
+}
+
+.button a {
+  margin: auto 0;
 }
 
 .button:hover::before,
@@ -246,7 +251,8 @@ input[type="radio"].visually-hidden {
 .header-logo {
   display: block;
   position: absolute;
-  top: -17px;
+  top: -19px;
+  left: 58px;
 }
 
 .header-logo img {
@@ -495,7 +501,7 @@ input[type="radio"].visually-hidden {
 
 .popular-categories li {
   display: block;
-  
+
   width: 160px;
   min-height: 250px;
 
@@ -574,25 +580,27 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns h2 {
-  margin-top: 51px;
-  margin-bottom: 29px;
+  margin-top: 52px;
+  margin-bottom: 28px;
+  margin-left: -3px;
 
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
   color: #000000;
 }
 
 .index-columns p {
+  margin-left: -2px;
+
   color: #464646;
   letter-spacing: normal;
 }
 
 .about ul {
-  margin-top:50px;
-  margin: 50px 0 55px 0;
+  margin: 51px 0 55px 0;
   padding: 0;
 }
 
@@ -625,7 +633,7 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns .map {
-  margin-top: 22px;
+  margin-top: 24px;
   background-color: #cccccc;
 }
 
@@ -956,7 +964,7 @@ main h1 {
 .catalog {
   flex-grow: 0;
   width: 760px;
-  padding: 24px 0 77px 72px; /* DO WE WANT TO HAVE 10px PADDING-LEFT? */
+  padding: 24px 0 78px 72px; /* DO WE WANT TO HAVE 10px PADDING-LEFT? */
 }
 
 .catalog-stretcher {
@@ -1037,10 +1045,10 @@ main h1 {
 .button-add-to-cart {
   display: none;
   position: absolute;
-  z-index: 2;
 
   top: 170px;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%);
   width: 200px;
   margin: 0 auto;
@@ -1049,10 +1057,10 @@ main h1 {
 .button-add-to-comparison {
   display: none;
   position: absolute;
-  z-index: 2;
 
   top: 229px;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%);
   padding: 0;
   margin: 0 auto;
@@ -1154,7 +1162,7 @@ main h1 {
 .main-footer {
   width: 100%;
   min-height: 323px;
-  padding-top: 65px;
+  padding-top: 63px;
 
   color: #ffffff;
 
@@ -1177,8 +1185,9 @@ main h1 {
   display: flex;
   order: 2;
 
-  width: 430px;
+  width: 427px;
   padding: 0px;
+  padding-top: 5px;
   margin: 0px;
 
   justify-content: space-between;
@@ -1205,6 +1214,11 @@ main h1 {
 .footer-contacts {
   width: 210px;
   letter-spacing: normal;
+}
+
+.footer-logo { /* PIXEL-PERFECT ADJUSTMENTS */
+  margin-top: 2px;
+  margin-left: -2px;
 }
 
 .services-nav-footer a:hover,
@@ -1248,17 +1262,19 @@ main h1 {
   align-items: flex-start;
 }
 .main-footer .row-footer-services {
-  padding-top: 6px;
+  margin-top: 5px;
 }
 
 .row-footer-social {
-  margin-top: 45px;
+  margin-top: 47px;
+  align-items: flex-start;
 }
 
 .row-footer-social::before {
   content: "";
   width: 80px;
   height: 7px;
+  margin-top: 14px;
 
   background-color: #ffc600;
 }
@@ -1268,6 +1284,7 @@ main h1 {
   justify-content: space-between;
   width: 142px;
   margin: 0px;
+  margin-top: 2px;
   padding: 0px;
 }
 
@@ -1424,11 +1441,11 @@ main h1 {
 
 .modal-close::before,
 .modal-close::after {
-  content: "";
 
   position: absolute;
   top: 26px;
   left: 11px;
+  content: "";
 
   width: 32px;
   height: 2px;
@@ -1448,7 +1465,7 @@ main h1 {
 
 .dummy-promo {
   height: 487px;
-  margin-bottom: 106px;
+  margin-bottom: 107px;
   background: url('../img/slider-1.png') no-repeat 100px 2px;
 }
 
@@ -1463,7 +1480,7 @@ main h1 {
   width: 1160px;
   margin: 0px auto;
   padding: 0px;
-  padding-top: 96px;
+  padding-top: 94px;
   padding-bottom: 93px;
 
   justify-content: space-between;
@@ -1490,5 +1507,5 @@ main h1 {
 
 .index-columns {
   min-height: 542px; /* TEMPORARY FOR PIXEL-PERFECT CHECK */
-  padding-bottom: 83px;
+  padding-bottom: 81px;
 }
