@@ -274,7 +274,6 @@ input[type="radio"].visually-hidden {
   background-color: #f7e296;
 }
 
-
 .main-nav li {
   list-style: none;
 }
@@ -322,7 +321,6 @@ input[type="radio"].visually-hidden {
   border: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-
 }
 
 .header-search-input:hover {
@@ -434,14 +432,12 @@ input[type="radio"].visually-hidden {
   background: url("../img/plus.svg") no-repeat right 50%;
 }
 
-
 .nav-dropdown:focus-within .nav-dropdown-inner,
 .nav-dropdown:hover .nav-dropdown-inner {
   display: flex;
 }
 
 .nav-dropdown-inner {
-  
   display: none; /* FLEX WHEN DROPDOWN */
   position: absolute;
   left: -60px;
@@ -512,7 +508,6 @@ input[type="radio"].visually-hidden {
 .popular-category-link:active::before {
   background-color: #f0c52e;
 }
-
 
 .popular-category-link img {
   margin-bottom: 28px;
@@ -592,7 +587,6 @@ input[type="radio"].visually-hidden {
   padding-left: 34px;
 }
 
-
 .about li::before { /* BULLET MARKER */
   position: absolute;
   top: 45%;
@@ -602,7 +596,6 @@ input[type="radio"].visually-hidden {
   height: 5px;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
-
 }
 
 .index-columns .button {
@@ -632,7 +625,6 @@ main h1 {
   line-height: 48px;
   letter-spacing: 0.5px;
 }
-
 
 .crumbs {
   display: flex;
@@ -1099,7 +1091,6 @@ main h1 {
   font-weight: bold;
   letter-spacing: 0.7px;
   color: rgba(0, 0, 0, 0.1);
-
 }
 
 .pagination-list {
@@ -1195,7 +1186,6 @@ main h1 {
   width: 210px;
   letter-spacing: normal;
 }
-
 
 .services-nav-footer a:hover,
 .services-nav-footer a:focus,
