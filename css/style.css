@@ -1122,7 +1122,10 @@ main h1 {
 }
 
 .pagination-list {
+  position: relative;
+
   display: flex;
+  justify-content: center;
   align-items: stretch;
 
   min-height: 70px;
@@ -1145,8 +1148,29 @@ main h1 {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   text-align: center;
+}
 
-  color: brown;
+.pagination-page a[href] {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-page a[href]:hover,
+.pagination-page a[href]:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-page a[href]:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-prev {
+  position: absolute;
+  left: 0px;
+}
+
+.pagination-next {
+  position: absolute;
+  right: 0px;
 }
 
 .pagination-prev > a,
@@ -1155,21 +1179,17 @@ main h1 {
   padding-right: 30px;
 }
 
-.pagination-prev {
-  margin-right: auto;
-}
-
-.pagination-next {
-  margin-left: auto;
-}
-
-.pagination-prev,
-.pagination-next {
+.pagination-prev a[href]:hover,
+.pagination-next a[href]:hover,
+.pagination-prev a[href]:focus,
+.pagination-next a[href]:focus {
   background-color: #D9D8D9;
 }
 
-.pagination-item-current {
-  _padding: 0 30px;
+.pagination-prev a[href]:active,
+.pagination-next a[href]:active {
+  background-color: #D9D8D9;
+  color: #ACABAC;
 }
 
 /* FOOTER */
