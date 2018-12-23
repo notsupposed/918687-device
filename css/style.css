@@ -796,20 +796,21 @@ main h1 {
 }
 
 .sorting a {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting a:hover,
 .sorting a:focus {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sorting a:active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .sorting .sort-current,
 .sorting .sorting-direction-current {
+  color: rgba(0, 0, 0, 1);
   opacity: 1;
 
   cursor: default;
@@ -823,8 +824,47 @@ main h1 {
 
 .sorting-caption {
   margin-left: 72px;
-  margin-right: 50px;
+  margin-right: 50px; 
+}
+
+.sorting-direction {
+  position: relative;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-direction a::before {
+  content: "";
+  position: absolute;
+  top: -4px;
   
+  width: 11px;
+  height: 10px;
+
+  opacity: 0.2;
+}
+
+.sorting-direction-ascending::before {
+  right: 30px;
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.sorting-direction-descending::before {
+  right: 0px;
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.sorting-direction a:hover::before,
+.sorting-direction a:focus::before {
+  opacity: 0.4;
+}
+
+.sorting-direction a:active::before,
+.sorting-direction .sorting-direction-current::before {
+  opacity: 1;
 }
 
 .filters-container {
