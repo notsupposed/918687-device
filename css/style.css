@@ -427,6 +427,7 @@ input[type="radio"].visually-hidden {
   margin-right: 280px;
   cursor: pointer;
 }
+
 .nav-dropdown > a {
   padding-right: 28px;
   background: url("../img/plus.svg") no-repeat right 50%;
@@ -441,18 +442,24 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-dropdown-inner {
-  display: none; /* FLEX WHEN DROPDOWN */
   position: absolute;
+  display: none; /* FLEX WHEN DROPDOWN */
+
   left: -60px;
   width: 1100px;
-  min-height: 140px;
+  height: 142px;
   margin: 0;
   padding: 18px 0 0 60px;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
 
   background-color: #f7e296;
 }
 
-.nav-dropdown-inner ul {
+
+.nav-dropdown-inner li {
   min-width: 143px;
   margin: 0 58px 0 0;
   padding: 0;
@@ -463,10 +470,19 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
 }
 
+.nav-dropdown-inner hr {
+  height: 100%;
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  border: none; 
+}
+
 /* INDEX MAIN */
 
 .popular-categories > ul {
   display: flex;
+
   width: 1160px;
   margin: 0px;
   padding: 0px 10px;
@@ -479,6 +495,7 @@ input[type="radio"].visually-hidden {
 
 .popular-categories li {
   display: block;
+  
   width: 160px;
   min-height: 250px;
 
