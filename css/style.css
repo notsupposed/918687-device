@@ -427,13 +427,16 @@ input[type="radio"].visually-hidden {
   margin-right: 280px;
   cursor: pointer;
 }
-.nav-dropdown > a{
+.nav-dropdown > a {
   padding-right: 28px;
   background: url("../img/plus.svg") no-repeat right 50%;
 }
 
-.nav-dropdown:focus-within .nav-dropdown-inner,
 .nav-dropdown:hover .nav-dropdown-inner {
+  display: flex;
+}
+
+.nav-dropdown:focus-within .nav-dropdown-inner {
   display: flex;
 }
 
