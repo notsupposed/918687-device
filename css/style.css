@@ -488,7 +488,7 @@ input[type="radio"].visually-hidden {
 
   width: 1160px;
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0;
 
   justify-content: space-between;
   flex-wrap: wrap;
@@ -542,6 +542,104 @@ input[type="radio"].visually-hidden {
 
 .popular-category-link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  height: 388px;
+  margin: 0;
+  margin-top: 72px;
+  padding: 0;
+
+  background-color: #e5e5e5;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #ffffff,
+      #ffffff 26%,
+      #e5e5e5 26%
+    );
+}
+
+.services ul {
+  width: 277px;
+  height: 239px;
+  padding: 0;
+  padding-top: 80px;
+  margin: 0;
+  border-right: 7px solid #000000;
+  list-style: none;
+
+  _background-color: greenyellow;
+}
+
+.services li {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.services li.current-service {
+  background-color: #000000;
+}
+
+.services a.button-service-current {
+  color: white;
+
+  cursor: default;
+}
+.services a.button-service-current::before {
+  background-color: #000000;
+}
+
+.services .button {
+  width: 160px;
+}
+
+.service {
+  display: none;
+  box-sizing: border-box;
+
+  width: 875px;
+  padding-left: 115px;
+  padding-right: 334px;
+}
+
+.service-icon-delivery {
+  background-image: url('../img/delivery.svg');
+  background-repeat: no-repeat;
+  background-position: 672px 85px;
+}
+
+.service-icon-warranty {
+  background-image: url('../img/warranty.svg');
+  background-repeat: no-repeat;
+  background-position: 657px 63px;
+}
+
+.service-icon-credit {
+  background-image: url('../img/credit.svg');
+  background-repeat: no-repeat;
+  background-position: 648px 63px;
+}
+
+.service h2 {
+  margin: 73px 0 31px 0;
+
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.service p {
+  margin: 0;
+}
+
+.current-service {
+  display: block;
 }
 
 .index-columns {
@@ -635,7 +733,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* PRODUCTS MAIN */
-main.page-catalog {
+main {
   width: 100%;
 }
 
@@ -1539,13 +1637,7 @@ main h1 {
 .dummy-promo {
   height: 487px;
   margin-bottom: 107px;
-  background: url('../img/slider-1.png') no-repeat 100px 2px;
-}
-
-.dummy-services {
-  height: 288px;
-  margin-top: 172px;
-  background-color: #e5e5e5;
+  background: url('../img/slider-1.png') no-repeat 90px 2px;
 }
 
 .brands ul {
