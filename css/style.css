@@ -816,12 +816,12 @@ main h1 {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting a:hover,
-.sorting a:focus {
+.sorting a[href]:hover,
+.sorting a[href]:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting a:active {
+.sorting a[href]:active {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -868,12 +868,12 @@ main h1 {
   background-image: url("../img/icon-down-dir.svg");
 }
 
-.sorting-direction a:hover::before,
-.sorting-direction a:focus::before {
+.sorting-direction a[href]:hover::before,
+.sorting-direction a[href]:focus::before {
   opacity: 0.4;
 }
 
-.sorting-direction a:active::before,
+.sorting-direction a:active[href]::before,
 .sorting-direction .sorting-direction-current::before {
   opacity: 1;
 }
