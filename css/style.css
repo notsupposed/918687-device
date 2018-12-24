@@ -450,7 +450,7 @@ input[type="radio"].visually-hidden {
 
 .nav-dropdown-inner {
   position: absolute;
-  display: flex; /* FLEX WHEN DROPDOWN */
+  display: none; /* FLEX WHEN DROPDOWN */
 
   left: -60px;
   width: 1100px;
