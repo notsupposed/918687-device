@@ -841,30 +841,28 @@ main h1 {
 .sorting-direction {
   position: relative;
 
+  display: flex;
+  justify-content: space-between;
+  width: 41px;
   margin: 0;
   margin-left: auto;
   padding: 0;
   list-style: none;
 }
 
-.sorting-direction a::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  
+.sorting-direction a {
+  display: block;
   width: 11px;
   height: 10px;
 
   opacity: 0.2;
 }
 
-.sorting-direction-ascending::before {
-  right: 30px;
+.sorting-direction-ascending {
   background-image: url("../img/icon-up-dir.svg");
 }
 
-.sorting-direction-descending::before {
-  right: 0px;
+.sorting-direction-descending {
   background-image: url("../img/icon-down-dir.svg");
 }
 
