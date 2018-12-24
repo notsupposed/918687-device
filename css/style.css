@@ -800,7 +800,7 @@ main h1 {
 
 .sorting-options li {
   margin-right: 30px;
-  margin-bottom: 5px; /* TEMPORARY COMPENSATION OF VERTICAL ALIGNMENT; */
+  margin-bottom: 5px;
 }
 
 .sorting-options a {
@@ -961,7 +961,7 @@ main h1 {
   width: 27px;
   height: 23px;
 
-  background-image: url('../img/checkbox-off.svg'); /* DO WE WANT TO PUT IT INLINE HERE ? */
+  background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -980,7 +980,7 @@ main h1 {
   width: 25px;
   height: 25px;
   
-  background-image: url('../img/radio-off.svg'); /* DO WE WANT TO PUT IT INLINE HERE ? */
+  background-image: url('../img/radio-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1009,7 +1009,7 @@ main h1 {
   flex-grow: 0;
   flex-shrink: 0;
   width: 760px;
-  padding: 24px 0 78px 72px; /* DO WE WANT TO HAVE 10px PADDING-LEFT? */
+  padding: 24px 0 78px 72px;
 }
 
 .catalog-list {
@@ -1413,7 +1413,7 @@ main h1 {
 .modal-feedback label {
   display: block;
 
-  margin-bottom: 6px; /* APPROXIMATE */
+  margin-bottom: 6px;
 
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 17.5px;
@@ -1452,7 +1452,7 @@ main h1 {
 .modal-feedback input {  
   height: 14px;
   width: 314px;
-  margin-bottom: 32px; /* APPROXIMATE */
+  margin-bottom: 32px;
 }
 
 .modal-feedback textarea {  
