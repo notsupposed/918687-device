@@ -1380,6 +1380,7 @@ main h1 {
 /* MODALS */
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 2; /* TEST ON MONOPODS PAGE */
 
@@ -1388,9 +1389,11 @@ main h1 {
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
-.modal-feedback {
-  display: none;
+.modal-show {
+  display: block;
+}
 
+.modal-feedback {
   top: 40%;
   left: 50%;
   box-sizing: border-box;
@@ -1467,8 +1470,6 @@ main h1 {
 }
 
 .modal-map {
-  display: none;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
