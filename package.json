@@ -1,0 +1,28 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "practice project",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "cssnano": "^4.1.8",
+    "postcss-cli": "^6.1.0"
+  },
+  "scripts": {
+    "watch-minify": "postcss css/style.css -o css/style.min.css -w",
+    "minify": "postcss css/style.css -o css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notsupposed/918687-device.git"
+  },
+  "keywords": [
+    "device"
+  ],
+  "author": "notsupposed",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/notsupposed/918687-device/issues"
+  },
+  "homepage": "https://github.com/notsupposed/918687-device#readme"
+}
