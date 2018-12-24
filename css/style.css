@@ -629,7 +629,7 @@ input[type="radio"].visually-hidden {
   color: #464646;
 }
 
-.index-columns .map {
+.index-columns img.map {
   margin-top: 24px;
   background-color: #cccccc;
 }
