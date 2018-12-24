@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-width: 1180px;
   margin: 0;
 
   font-family: 'OpenSans-Light', Arial, sans-serif;
@@ -726,6 +727,24 @@ main h1 {
   width: 100%;
 }
 
+.stretch::before, 
+.stretch::after {
+  content: "";
+  flex-grow: 1;
+}
+
+.stretch-captions::before {
+  background-color: #DBDADB;
+}
+
+.stretch-captions::after {
+  background-color: #EBEAEB;
+}
+
+.stretch-catalog::before {
+  background-color: #EFEEEF;
+}
+
 .stretch-captions {
   min-height: 70px;
   align-items: stretch;
@@ -746,6 +765,7 @@ main h1 {
 .filters-caption { 
   display: flex; 
   flex-grow: 0;
+  flex-shrink: 0;
   width: 268px;
   padding-left: 60px;
   
@@ -754,14 +774,11 @@ main h1 {
   background-color: #DBD9DB;
 }
 
-.filters-caption-stretcher {
-  flex-grow: 1;
-  
-  background-color: #DBDADB;
-}
 
 .sorting {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 832px;
 
   align-items: center;
@@ -816,12 +833,6 @@ main h1 {
   cursor: default;
 }
 
-.sorting-stretcher {
-  flex-grow: 1;
-  
-  background-color: #EBEAEB;
-}
-
 .sorting-caption {
   margin-left: 72px;
   margin-right: 50px; 
@@ -869,15 +880,10 @@ main h1 {
 
 .filters-container {
   flex-grow: 0;
+  flex-shrink: 0;
   width: 328px;
 
   color: #000000;
-
-  background-color: #EFEEEF;
-}
-
-.filters-stretcher {
-  flex-grow: 1;
 
   background-color: #EFEEEF;
 }
@@ -1003,12 +1009,9 @@ main h1 {
 
 .catalog {
   flex-grow: 0;
+  flex-shrink: 0;
   width: 760px;
   padding: 24px 0 78px 72px; /* DO WE WANT TO HAVE 10px PADDING-LEFT? */
-}
-
-.catalog-stretcher {
-  flex-grow: 1;
 }
 
 .catalog-list {
