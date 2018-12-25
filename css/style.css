@@ -230,6 +230,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 
 .main-header {
@@ -451,6 +456,7 @@ input[type="radio"].visually-hidden {
 .nav-dropdown-inner {
   position: absolute;
   display: none; /* FLEX WHEN DROPDOWN */
+  z-index: 2;
 
   left: -60px;
   width: 1100px;
@@ -482,6 +488,208 @@ input[type="radio"].visually-hidden {
 }
 
 /* INDEX MAIN */
+.slider {
+  position: relative;
+  min-height: 500px;
+  margin-bottom: 12px;
+  z-index: 1;
+
+  background-color: #f7e296;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #f7e296,
+      #f7e296 19.3%,
+      #ffffff 19.3%
+    );
+}
+
+.slider-controls {
+  position: absolute;
+  z-index: 3;
+  top: 320px;
+  right: 76px;
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+  
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  border: 1px solid #060506;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.slider-controls .current::before {
+  content: "";
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 3px;
+  height: 3px;
+
+  border: 1px solid #060506;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  position: relative;
+  z-index: 2;
+  min-height: 500px;
+  padding-left: 599px;
+  padding-top: 82px;
+}
+
+.slider-item::before {
+  content: ""; /* FILLED BY .slider-item:nth-child */
+  position: absolute;
+  z-index: -1;
+  top: -12px;
+  right: -4px;
+
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+  font-size: 179px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+
+  color: #ffffff;
+}
+
+.slider-item::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 410px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slider-1.png");
+  background-repeat: no-repeat;
+  background-position: 90px 2px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slider-2.png");
+  background-repeat: no-repeat;
+  background-position: 115px 15px;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slider-3.png");
+  background-repeat: no-repeat;
+  background-position: 31px 67px;
+}
+
+.slider-item:nth-child(1)::before {
+  content: "01";
+}
+
+.slider-item:nth-child(2)::before {
+  content: "02";
+}
+
+.slider-item:nth-child(3)::before {
+  content: "03";
+}
+
+.slider-item h3 {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+  font-size: 47.5px;
+  line-height: 56px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.slider-item p {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.slider-item .button {
+  width: 220px;
+  margin-left: 1px;
+  margin-bottom: 48px;
+}
+
+.product-features {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-feature {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 78px;
+}
+
+.product-feature:last-child {
+  margin-right: 0;
+}
+
+.product-feature-name {
+  font-family: 'OpenSans-Light', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+}
+
+.product-feature-value {
+  margin-bottom: 9px;
+
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
 
 .popular-categories > ul {
   display: flex;
@@ -570,8 +778,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   border-right: 7px solid #000000;
   list-style: none;
-
-  _background-color: greenyellow;
 }
 
 .services li {
@@ -585,7 +791,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services a.button-service-current {
-  color: white;
+  color: #f0c52e;
 
   cursor: default;
 }
@@ -845,11 +1051,6 @@ main h1 {
 }
 
 /* PRODUCTS CATALOG */
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .stretch {
   display: flex;
   justify-content: center;
@@ -1666,4 +1867,3 @@ main h1 {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-
