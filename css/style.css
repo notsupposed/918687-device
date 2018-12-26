@@ -790,12 +790,12 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
-.services a.button-service-current {
+.services .button-service-current {
   color: #f0c52e;
 
   cursor: default;
 }
-.services a.button-service-current::before {
+.services .button-service-current::before {
   background-color: #000000;
 }
 
@@ -879,15 +879,11 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns {
-  min-height: 542px; /* TEMPORARY FOR PIXEL-PERFECT CHECK */
-  padding-bottom: 81px;
-}
-
-.index-columns {
   display: flex;
   justify-content: space-between;
   width: 1160px;
   padding: 0 10px;
+  padding-bottom: 81px;
 }
 
 .index-columns section {
