@@ -1176,12 +1176,22 @@ main h1 {
   list-style: none;
 }
 
-.sorting-direction a {
+.sorting-direction-ico {
   display: block;
   width: 11px;
   height: 10px;
 
   opacity: 0.2;
+}
+
+.sorting-direction-ico:hover,
+.sorting-direction-ico:focus {
+  opacity: 0.4;
+}
+
+.sorting-direction-ico:active,
+.sorting-direction .sorting-direction-ico__current {
+  opacity: 1;
 }
 
 .sorting-direction-ascending {
@@ -1190,16 +1200,6 @@ main h1 {
 
 .sorting-direction-descending {
   background-image: url("../img/icon-down-dir.svg");
-}
-
-.sorting-direction a[href]:hover::before,
-.sorting-direction a[href]:focus::before {
-  opacity: 0.4;
-}
-
-.sorting-direction a:active[href]::before,
-.sorting-direction .sorting-direction-current::before {
-  opacity: 1;
 }
 
 .filters-container {
