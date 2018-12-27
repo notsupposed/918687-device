@@ -1218,7 +1218,7 @@ main h1 {
   margin: 0;
   margin-right: 68px;
   margin-left: auto;
-  padding-top: 209px;
+  padding-top: 69px;
 
 }
 
@@ -1243,6 +1243,65 @@ main h1 {
   line-height: 24px;
   font-weight: bold;
   letter-spacing: 0.2px;
+}
+
+.price-range {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.price-range .scale {
+  height: 2px;
+
+  background: #dbdbdb;
+}
+
+.price-range .bar {
+  width: 56%;
+  height: 100%;
+
+  background: #91c92f;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -10px;
+  
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+
+  background: #ABAAAB;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #DAD9DA;
+
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: -5px;
+}
+
+.range-toggle-max {
+  left: 53%;
+}
+
+.range-label {
+  position: relative;
+  top: 5px;
+
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.range-label-max {
+  left: 29.5%;
 }
 
 .filters ul {

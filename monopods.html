@@ -96,6 +96,20 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filters" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
+            <legend>Стоимость</legend>
+            <div class="price-range">
+              <label class="visually-hidden min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="visually-hidden max-price">до <input type="text" name="max-price" value="5000"></label>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+              <span class="range-label range-label-min">от 0</span>
+              <span class="range-label range-label-max">до 5000</span>
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li>
