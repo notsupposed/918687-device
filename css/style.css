@@ -86,7 +86,7 @@ a {
 
 .button::before {
   position: absolute;
-  top: 16px; /* REFACTOR IT */
+  top: 16px;
   left: 0;
   content: "";
 
@@ -103,8 +103,9 @@ a {
 }
 
 .button:hover::before,
-.button:focus::before {
-  top: 0; /* REFACTOR IT */
+.button:focus::before,
+.button:active::before {
+  top: 0;
   
   height: 40px;
 }
@@ -327,11 +328,17 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid transparent;
 }
 
-.header-search-input:hover {
+.header-search-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search-input:hover,
+.header-search-input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header-search-input:focus {
+.header-search-input:focus,
+.header-search-input:focus::placeholder {
   color: #000000;
 }
 
@@ -523,6 +530,7 @@ input[type="radio"].visually-hidden {
   padding: 8px;
 
   border-radius: 50%;
+  vertical-align: top;
   cursor: pointer;
 }
 
@@ -755,7 +763,7 @@ input[type="radio"].visually-hidden {
 .services {
   display: flex;
   justify-content: center;
-  height: 388px;
+  min-height: 388px;
   margin: 0;
   margin-top: 72px;
   padding: 0;
@@ -786,22 +794,31 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.services li.current-service {
-  background-color: #000000;
-}
-
-.services .button-service-current {
-  color: #f0c52e;
-
+.button-service-current {
   cursor: default;
 }
 
-.services .button-service-current::before {
-  background-color: #000000;
+.button-service-current::before {
+  top: 0;
+  
+  height: 40px;
 }
 
-.services .button {
+.button-service,
+.button-service::before {
   width: 160px;
+}
+
+.button-service-current,
+.services .button-service:active {
+  color: #f0c52e;
+}
+
+.button-service-current::before,
+.button-service:active::before {
+  width: 277px;
+
+  background-color: #000000;
 }
 
 .service {
@@ -971,11 +988,11 @@ input[type="radio"].visually-hidden {
 }
 
 /* PRODUCTS MAIN */
-main {
+.page {
   width: 100%;
 }
 
-main h1 {
+.page-catalog h1 {
   margin: 0;
   margin-top: 38px;
   margin-left: 60px;
