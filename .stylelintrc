@@ -4,6 +4,7 @@
     "no-descending-specificity": null,
     "declaration-empty-line-before": null,
     "color-hex-length": "long",
+    "string-quotes": "single",
     "no-eol-whitespace": [
       true,
       {

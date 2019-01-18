@@ -2,8 +2,8 @@
   font-family: 'OpenSans';
   src:
     url('../fonts/opensans-regular.woff2') format('woff2'),
-    url("../fonts/opensans-regular.woff") format("woff"),
-    url("../fonts/opensans-regular.eot") format("eot");
+    url('../fonts/opensans-regular.woff') format('woff'),
+    url('../fonts/opensans-regular.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,8 +12,8 @@
   font-family: 'OpenSans-Light';
   src:
     url('../fonts/opensans-light.woff2') format('woff2'),
-    url("../fonts/opensans-light.woff") format("woff"),
-    url("../fonts/opensans-light.eot") format("eot");
+    url('../fonts/opensans-light.woff') format('woff'),
+    url('../fonts/opensans-light.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,8 +22,8 @@
   font-family: 'Gilroy-ExtraBold';
   src:
     url('../fonts/gilroy-extrabold.woff2') format('woff2'),
-    url("../fonts/gilroy-extrabold.woff") format("woff"),
-    url("../fonts/gilroy-extrabold.eot") format("eot");
+    url('../fonts/gilroy-extrabold.woff') format('woff'),
+    url('../fonts/gilroy-extrabold.eot') format('eot');
   font-weight: bold;
   font-style: normal;
 }
@@ -32,8 +32,8 @@
   font-family: 'Gilroy';
   src:
     url('../fonts/gilroy-light.woff2') format('woff2'),
-    url("../fonts/gilroy-light.woff") format("woff"),
-    url("../fonts/gilroy-light.eot") format("eot");
+    url('../fonts/gilroy-light.woff') format('woff'),
+    url('../fonts/gilroy-light.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
@@ -88,7 +88,7 @@ a {
   position: absolute;
   top: 16px;
   left: 0;
-  content: "";
+  content: '';
 
   z-index: -1;
   
@@ -115,8 +115,8 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -145,17 +145,17 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 4px;
   left: 0;
-  content: "";
+  content: '';
   width: 13px;
   height: 12px;
 
-  background-image: url("../img/user.svg");
+  background-image: url('../img/user.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .with-icon-user-light::before {
-  background-image: url("../img/user-light.svg");
+  background-image: url('../img/user-light.svg');
 }
 
 .with-icon-user:hover::before,
@@ -178,17 +178,17 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: 0;
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
 
-  background-image: url("../img/compare.svg");
+  background-image: url('../img/compare.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .with-icon-compare-light::before {
-  background-image: url("../img/compare-light.svg");
+  background-image: url('../img/compare-light.svg');
 }
 
 .with-icon-compare:hover::before,
@@ -210,17 +210,17 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 4px;
   left: 0;
-  content: "";
+  content: '';
   width: 12px;
   height: 12px;
 
-  background-image: url("../img/cart.svg");
+  background-image: url('../img/cart.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .with-icon-cart-light::before {
-  background-image: url("../img/cart-light.svg");
+  background-image: url('../img/cart-light.svg');
 }
 
 .with-icon-cart:hover::before,
@@ -281,7 +281,7 @@ input[type="radio"].visually-hidden {
 .main-nav {
   position: relative;
 
-  min-height: 186px; /* TEMPORARY SOLUTION; REFACTOR BEFORE SUBMITTING */
+  min-height: 186px;
   padding: 0 57px 0 60px;
 
   color: #000000;
@@ -321,7 +321,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2px;
   color: rgba(0, 0, 0, 0.3);
   
-  background: url("../img/search.svg") no-repeat 3px 52%;
+  background: url('../img/search.svg') no-repeat 3px 52%;
   background-color: #f7e296;
   border: none;
   border-top: 2px solid transparent;
@@ -453,7 +453,7 @@ input[type="radio"].visually-hidden {
 
 .nav-dropdown > a {
   padding-right: 28px;
-  background: url("../img/plus.svg") no-repeat right 50%;
+  background: url('../img/plus.svg') no-repeat right 50%;
 }
 
 .nav-dropdown:hover .nav-dropdown-inner {
@@ -535,7 +535,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controls i::after {
-  content: "";
+  content: '';
   
   position: absolute;
 
@@ -549,7 +549,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controls .current::before {
-  content: "";
+  content: '';
   
   position: absolute;
   left: 50%;
@@ -583,7 +583,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item::before {
-  content: ""; /* FILLED BY .slider-item:nth-child */
+  content: ''; /* FILLED BY .slider-item:nth-child */
   position: absolute;
   z-index: -1;
   top: -12px;
@@ -599,7 +599,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 40px;
   right: 410px;
@@ -612,33 +612,33 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-child(1) {
   display: block;
-  background-image: url("../img/slider-1.png");
+  background-image: url('../img/slider-1.png');
   background-repeat: no-repeat;
   background-position: 90px 2px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("../img/slider-2.png");
+  background-image: url('../img/slider-2.png');
   background-repeat: no-repeat;
   background-position: 115px 15px;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("../img/slider-3.png");
+  background-image: url('../img/slider-3.png');
   background-repeat: no-repeat;
   background-position: 31px 67px;
 }
 
 .slider-item:nth-child(1)::before {
-  content: "01";
+  content: '01';
 }
 
 .slider-item:nth-child(2)::before {
-  content: "02";
+  content: '02';
 }
 
 .slider-item:nth-child(3)::before {
-  content: "03";
+  content: '03';
 }
 
 .slider-item h3 {
@@ -731,7 +731,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-category-link::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   z-index: -1;
@@ -915,7 +915,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 0;
-  content: "";
+  content: '';
   width: 80px;
   height: 7px;
   background-color: #000000;
@@ -969,7 +969,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 45%;
   left: 0;
-  content: "";
+  content: '';
   width: 5px;
   height: 5px;
   border: 1px solid #e5e5e5;
@@ -1042,7 +1042,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 9px;
   right: -20px;
-  content: "";
+  content: '';
 
   width: 4px;
   height: 7px;
@@ -1074,7 +1074,7 @@ input[type="radio"].visually-hidden {
 
 .stretch::before,
 .stretch::after {
-  content: "";
+  content: '';
   flex-grow: 1;
 }
 
@@ -1213,11 +1213,11 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-direction-ascending {
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url('../img/icon-up-dir.svg');
 }
 
 .sorting-direction-descending {
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url('../img/icon-down-dir.svg');
 }
 
 .filters-container {
@@ -1358,7 +1358,7 @@ input[type="radio"].visually-hidden {
 
   top: 0;
   left: -40px;
-  content: "";
+  content: '';
 
   width: 27px;
   height: 23px;
@@ -1377,7 +1377,7 @@ input[type="radio"].visually-hidden {
 
   top: -1px;
   left: -40px;
-  content: "";
+  content: '';
 
   width: 25px;
   height: 25px;
@@ -1546,7 +1546,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 29px;
   right: 27px;
-  content: "NEW";
+  content: 'NEW';
 
   width: 57px;
   height: 57px;
@@ -1745,7 +1745,7 @@ input[type="radio"].visually-hidden {
 }
 
 .row-footer-social::before {
-  content: "";
+  content: '';
   width: 80px;
   height: 7px;
   margin-top: 14px;
@@ -1867,7 +1867,7 @@ input[type="radio"].visually-hidden {
   border-color: #edb5b5;
 }
 
-.modal-feedback button[type="submit"] {
+.modal-feedback button[type='submit'] {
   width: 200px;
 }
 
@@ -1920,7 +1920,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 26px;
   left: 11px;
-  content: "";
+  content: '';
 
   width: 32px;
   height: 2px;
