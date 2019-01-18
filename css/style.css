@@ -981,7 +981,7 @@ input[type='radio'].visually-hidden {
 
 .index-columns img.map {
   margin-top: 24px;
-  background-color: #cccccc;
+  background-color: #e9e8e9;
 }
 
 /* PRODUCTS MAIN */
@@ -1874,8 +1874,10 @@ input[type='radio'].visually-hidden {
   transform: translate(-50%, -50%);
 }
 
-.modal-map img {
+.modal-map iframe {
   display: block;
+
+  border: 0;
 
   background-color: #e9e8e9;
 }
