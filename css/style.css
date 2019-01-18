@@ -769,13 +769,9 @@ input[type='radio'].visually-hidden {
   padding: 0;
 
   background-color: #e5e5e5;
-  background-image:
-    linear-gradient(
-      to bottom,
-      #ffffff,
-      #ffffff 26%,
-      #e5e5e5 26%
-    );
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQImWP4//8/AAX+Av5Y8msOAAAAAElFTkSuQmCC');
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
 }
 
 .services ul {
@@ -828,6 +824,7 @@ input[type='radio'].visually-hidden {
   width: 875px;
   padding-left: 115px;
   padding-right: 334px;
+  padding-bottom: 30px;
 }
 
 .service-icon-delivery {
