@@ -262,16 +262,16 @@
       <div class="row">
         <p>
           <label for="feedback-name">Ваше имя:</label>
-          <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" required>
+          <input class="js-validation hightlight-invalid" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="feedback-email">Ваш e-mail:</label>
-          <input type="text" id="feedback-email" name="email" placeholder="email@example.com" required>
+          <input class="js-validation hightlight-invalid" type="email" id="feedback-email" name="email" placeholder="email@example.com" required>
         </p>
       </div>
       <p>
         <label for="feedback-text">Текст письма:</label>
-        <textarea id="feedback-text" placeholder="В свободной форме" required></textarea>
+        <textarea class="js-validation hightlight-invalid" id="feedback-text" name="feedback" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>

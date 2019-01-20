@@ -1793,10 +1793,38 @@ input[type='radio'].visually-hidden {
   to { transform: translate(-50%, -50%); }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-52%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-48%, -50%);
+  }
+}
+
 .modal-show {
   display: block;
+}
 
-  animation: slidein 0.2s;
+.modal-show-animation {
+  animation: slidein 0.1s;
+}
+
+.form-invalid-animation {
+  animation: shake 0.2s;
 }
 
 .modal-feedback {
@@ -1852,6 +1880,17 @@ input[type='radio'].visually-hidden {
 .modal-feedback textarea:focus {
   background-color: #ffffff;
   border-color: #f0c52e;
+}
+
+.modal-feedback input:invalid,
+.modal-feedback textarea:invalid {
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-feedback .hightlight-invalid:invalid {
+  background-color: #edb5b5;
+  border-color: #edb5b5;
 }
 
 .modal-feedback input {
