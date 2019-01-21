@@ -26,6 +26,9 @@ const mapCloseButton = document.querySelector('.modal-map .modal-close');
 const serviceButtons = document.querySelectorAll('.button-service');
 const serviceSlides = document.querySelectorAll('.service');
 
+const sliderButtons = document.querySelectorAll('.slider-controls i');
+const sliderSlides = document.querySelectorAll('.slider-item');
+
 /* KEYBOARD HANDLERS */
 
 window.addEventListener('keydown', function(e) {
@@ -69,6 +72,13 @@ serviceButtons.forEach(function(button) {
   button.addEventListener('click', function(e) {
     const serviceName = e.target.dataset.serviceName;
     switchServiceSlide(serviceName);
+  });
+});
+
+sliderButtons.forEach(function(button) {
+  button.addEventListener('click', function(e) {
+    const slideId = e.target.dataset.slide;
+    switchSliderSlide(slideId);
   });
 });
 
@@ -121,19 +131,26 @@ function closeVisibleModal() {
 }
 
 function switchServiceSlide(serviceName) {
-  const targetButtonSelector = '.button-service[data-service-name="' + serviceName + '"]';
+  const targetButtonSelector =
+    '.button-service[data-service-name="' + serviceName + '"]';
   const targetButton = document.querySelector(targetButtonSelector);
-  const targetServiceSelector = '.service[data-service-name="' + serviceName + '"]';
+  const targetServiceSelector =
+    '.service[data-service-name="' + serviceName + '"]';
   const targetSlide = document.querySelector(targetServiceSelector);
   if (!targetButton || !targetSlide) return;
-  serviceButtons.forEach(function(button) {
-    button.classList.remove('button-service-current');
-  });
-  targetButton.classList.add('button-service-current');
-  serviceSlides.forEach(function(slide) {
-    slide.classList.remove('current-service');
-  });
-  targetSlide.classList.add('current-service');
+  switchCurrentElement(serviceButtons, targetButton, 'button-service-current');
+  switchCurrentElement(serviceSlides, targetSlide, 'current-service');
+}
+
+function switchSliderSlide(slideId) {
+  const targetButtonSelector =
+    '.slider-controls i[data-slide="' + slideId + '"]';
+  const targetButton = document.querySelector(targetButtonSelector);
+  const targetSlideSelector = '.slider-item[data-slide="' + slideId + '"]';
+  const targetSlide = document.querySelector(targetSlideSelector);
+  if (!targetButton || !targetSlide) return;
+  switchCurrentElement(sliderButtons, targetButton, 'current');
+  switchCurrentElement(sliderSlides, targetSlide, 'slider-item-current');
 }
 
 /* HELPERS */
@@ -149,4 +166,11 @@ function setAnimationClass(element, classname, ttl) {
   window.setTimeout(function() {
     classList.remove(classname);
   }, ttl);
+}
+
+function switchCurrentElement(elementsInGroup, currentElement, className) {
+  elementsInGroup.forEach(function(element) {
+    element.classList.remove(className);
+  });
+  currentElement.classList.add(className);
 }

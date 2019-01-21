@@ -610,8 +610,11 @@ input[type='radio'].visually-hidden {
   background-color: #ffffff;
 }
 
-.slider-item:nth-child(1) {
+.slider-item-current {
   display: block;
+}
+
+.slider-item:nth-child(1) {
   background-image: url('../img/slider-1.png');
   background-repeat: no-repeat;
   background-position: 90px 2px;
