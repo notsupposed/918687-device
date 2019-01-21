@@ -1477,7 +1477,10 @@ input[type='radio'].visually-hidden {
   position: absolute;
 }
 
-.catalog-item:hover .show-on-hover,
+.catalog-item:hover .show-on-hover {
+  display: block;
+}
+
 .catalog-item:focus-within .show-on-hover {
   display: block;
 }
