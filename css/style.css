@@ -347,6 +347,10 @@ input[type='radio'].visually-hidden {
   border-bottom: 2px solid #000000;
 }
 
+.header-search:focus-within .header-search-input {
+  border-bottom: 2px solid#000000;
+}
+
 .header-search-button {
   display: none;
 
@@ -363,6 +367,8 @@ input[type='radio'].visually-hidden {
 
 .header-search-button:hover,
 .header-search-button:focus {
+  display: block;
+
   background-color: #000000;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -373,6 +379,10 @@ input[type='radio'].visually-hidden {
 }
 
 .header-search-input:focus + .header-search-button {
+  display: block;
+}
+
+.header-search:focus-within .header-search-button {
   display: block;
 }
 
