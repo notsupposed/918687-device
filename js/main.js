@@ -1,15 +1,30 @@
+// IE11 doesn't support forEach for NodeList
+// https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach#Polyfill
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 const ESC_KEY_CODE = 27;
 
 const feedbackModal = document.querySelector('.modal-feedback');
 const feedbackOpenButton = document.querySelector('.contacts a.button');
 const feedbackForm = document.querySelector('form.feedback-form');
-const feedbackInputs = document.querySelectorAll('.feedback-form .js-validation');
-const feedbackSubmitButton = document.querySelector('.feedback-form button[type="submit"]');
-const feedbackCloseButton = document.querySelector('.modal-feedback .modal-close');
+const feedbackInputs = document.querySelectorAll(
+  '.feedback-form .js-validation'
+);
+const feedbackSubmitButton = document.querySelector(
+  '.feedback-form button[type="submit"]'
+);
+const feedbackCloseButton = document.querySelector(
+  '.modal-feedback .modal-close'
+);
 
 const mapModal = document.querySelector('.modal-map');
 const mapOpenButton = document.querySelector('.contacts a.map');
 const mapCloseButton = document.querySelector('.modal-map .modal-close');
+
+const serviceButtons = document.querySelectorAll('.button-service');
+const serviceSlides = document.querySelectorAll('.service');
 
 /* KEYBOARD HANDLERS */
 
@@ -48,6 +63,13 @@ mapOpenButton.addEventListener('click', function(e) {
 
 mapCloseButton.addEventListener('click', function(e) {
   closeMapModal();
+});
+
+serviceButtons.forEach(function(button) {
+  button.addEventListener('click', function(e) {
+    const serviceName = e.target.dataset.serviceName;
+    switchServiceSlide(serviceName);
+  });
 });
 
 /* METHODS */
@@ -96,6 +118,22 @@ function closeVisibleModal() {
   } else {
     return false;
   }
+}
+
+function switchServiceSlide(serviceName) {
+  const targetButtonSelector = '.button-service[data-service-name="' + serviceName + '"]';
+  const targetButton = document.querySelector(targetButtonSelector);
+  const targetServiceSelector = '.service[data-service-name="' + serviceName + '"]';
+  const targetSlide = document.querySelector(targetServiceSelector);
+  if (!targetButton || !targetSlide) return;
+  serviceButtons.forEach(function(button) {
+    button.classList.remove('button-service-current');
+  });
+  targetButton.classList.add('button-service-current');
+  serviceSlides.forEach(function(slide) {
+    slide.classList.remove('current-service');
+  });
+  targetSlide.classList.add('current-service');
 }
 
 /* HELPERS */
