@@ -319,7 +319,7 @@ input[type='radio'].visually-hidden {
   height: 41px;
 
   letter-spacing: 0.2px;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
   
   background: url('../img/search.svg') no-repeat 3px 52%;
   background-color: #f7e296;
@@ -328,6 +328,7 @@ input[type='radio'].visually-hidden {
   border-bottom: 2px solid transparent;
 }
 
+.header-search-input,
 .header-search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -342,8 +343,8 @@ input[type='radio'].visually-hidden {
   color: #000000;
 }
 
-.header-search:focus-within .header-search-input {
-  border-bottom: 2px solid#000000;
+.header-search-input:focus {
+  border-bottom: 2px solid #000000;
 }
 
 .header-search-button {
@@ -371,7 +372,7 @@ input[type='radio'].visually-hidden {
   color: rgba(255, 255, 255, 0.25);
 }
 
-.header-search:focus-within .header-search-button {
+.header-search-input:focus + .header-search-button {
   display: block;
 }
 
@@ -424,7 +425,6 @@ input[type='radio'].visually-hidden {
 }
 
 .site-nav {
-
   display: flex;
   position: relative;
   margin: 0;
